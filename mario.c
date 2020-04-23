@@ -12,9 +12,9 @@ int main(void)
 
     do
     {
-        height = get_int("Enter a number between 1 - 50:\n");
+        height = get_int("Enter a number between 1 - 8:\n");
     }
-    while(height < 0 || height > 55);
+    while(height < 0 || height > 8);
 
     //make the centre of the triangle
     spaces = height - 1;
