@@ -1,6 +1,8 @@
+// Main sourcecode
 #include <stdio.h>
 #include <cs50.h>
 
+// Code
 int main(void)
 {
     printf("hello, world\n");
