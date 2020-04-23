@@ -14,7 +14,7 @@ int main(void)
     {
         height = get_int("Enter a number between 1 - 8:\n");
     }
-    while(height < 0 || height > 8);
+    while(height < 1 || height > 8);
 
     //make the centre of the triangle
     spaces = height - 1;
