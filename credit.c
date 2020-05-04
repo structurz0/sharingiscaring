@@ -23,7 +23,7 @@ int main(void)
     if (check_validity(credit_card_number) == true)
         print_credit_card_brand(credit_card_number);
     else
-        printf("Invalid\n");
+        printf("INVALID\n");
 }
 
 bool check_validity(long long credit_card_number)
