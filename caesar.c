@@ -9,9 +9,9 @@
 bool check_valid_key(string s);
 
 // Main code
-int main (int argc, string argv[])
+int main(int argc, string argv[])
 {
-    if (argc != 2 || !check_valid_key (argv[1]))
+    if (argc != 2 || !check_valid_key(argv[1]))
     {
         printf("Usage: ./caesar key");
         return 1;
@@ -28,11 +28,15 @@ int main (int argc, string argv[])
         {
             char m = 'A';
             if (islower(c))
+            {
                 m = 'a';
+            }
             printf("%c", (c - m + key) % 26 + m);
         }
         else
+        {
             printf("%c", c);
+        }
     }
     printf("\n");
 }
@@ -42,6 +46,8 @@ bool check_valid_key(string s)
 {
     for (int i = 0, len = strlen(s); i < len; i++)
         if (!isdigit(s[i]))
+        {
             return false;
+        }
     return true;
 }
