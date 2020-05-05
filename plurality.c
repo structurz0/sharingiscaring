@@ -83,7 +83,7 @@ bool vote(string name)
 void print_winner(void)
 {
     int maxvote = 0;
-    string winner [MAX];
+    string winner [9];
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].votes >= maxvote)
@@ -92,7 +92,7 @@ void print_winner(void)
             winner[i] = candidates[i].name;
         }
     }
-    for (int i = 0; i< candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].votes >= maxvote)
         {
